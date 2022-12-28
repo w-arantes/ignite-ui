@@ -10,3 +10,18 @@ export default {
 } as Meta<BoxProps>
 
 export const Primary: StoryObj<BoxProps> = {}
+
+export const CustomElementTag: StoryObj<BoxProps> = {
+  args: {
+    children: 'Custom element box',
+    as: 'section',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'By default the component will always be an element of type `div`, but we can change the element using the `as` property.',
+      },
+    },
+  },
+}

@@ -11,9 +11,17 @@ export default {
 
 export const Primary: StoryObj<TextProps> = {}
 
-export const CustomTag: StoryObj<TextProps> = {
+export const CustomElementTag: StoryObj<TextProps> = {
   args: {
-    children: 'Custom tag text',
+    children: 'Custom element text',
     as: 'strong',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'By default the component will always be an element of type `p`, but we can change the element using the `as` property.',
+      },
+    },
   },
 }
