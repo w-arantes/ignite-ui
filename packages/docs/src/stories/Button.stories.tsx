@@ -8,8 +8,31 @@ export default {
   args: {
     variant: 'primary',
     children: 'Submit',
+    size: 'md',
+    disabled: false,
   },
+
   argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'tertiary'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+
     onClick: {
       action: 'click',
     },
