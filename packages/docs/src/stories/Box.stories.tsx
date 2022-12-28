@@ -13,7 +13,7 @@ export const Primary: StoryObj<BoxProps> = {}
 
 export const CustomElementTag: StoryObj<BoxProps> = {
   args: {
-    children: 'Custom element box',
+    children: <Text>Custom element tag</Text>,
     as: 'section',
   },
   parameters: {
